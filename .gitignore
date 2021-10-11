@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -130,4 +132,5 @@ dmypy.json
 
 
 # Datasets
+>>>>>>> cf7f26941b178c06c9afc6955a802f0c909c8bb6
 Dataset/

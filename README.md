@@ -17,6 +17,7 @@ Steps performed:
 ## Models
 Regression Models:
 Linear Regression ,Lasso Regression, Ridge Regression ,Elastic Net and Support Vector Regression.
+
 Classification Models:
 Logistic Regression , Naive Bayes, Decision Trees, Random forest, K-nearest Neighbours,Support Vector Machines and Artificial Neural Network.
 

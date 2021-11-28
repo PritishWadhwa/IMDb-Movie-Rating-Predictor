@@ -1,28 +1,93 @@
-# IMDB Rating Predictor ML Project
+# IMDb Movie Rating Predictor ML Project
 
-by Manasvi Singh, Pritish Wadhwa, Ananya Jain and Yash Bhargava, Machine Learning (CSE343, ECE343) from Indraprastha Institute of Information Technology, Delhi.
+by **Ananya Jain**, **Manasvi Singh**, **Pritish Wadhwa** and **Yash Bhargava**, Machine Learning (CSE343/ECE343) under the guidance of **Dr. Jainendra Shukla** from **Indraprastha Institute of Information Technology, Delhi**.
 
 ## Introduction
+<p align="justify">Is it possible to predict the rating of a movie prior to its release or production? Every year countless movies are made and released worldwide. All these movies are given ratings by viewers throughout the globe.These ratings are combined together to form the IMDb ratings. IMDb rating is the singlemost influential factor in deciding any consumer’s opinion and inherently the success of a movie.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the machine learning techniques at our disposal, we aim to predict the seemingly unpredictable IMDb rating of any movie before its theatrical release. Successfully predicting IMDb rating is beneficial for both producers (from a financial standpoint) and consumers (from an entertainment standpoint) alike.</p>
 
-Is  it  possible  to  predict  the  rating  of  a  movie  prior  to  its release  or  production?   Every  year  countless  movies  are made and released worldwide.  All these movies are given ratings by viewers throughout the globe.These ratings are combined together to form the IMDb ratings.   IMDb rat-ing is the singlemost influential factor in deciding any con-sumer’s opinion and inherently the success of a movie.With the machine learning techniques at our disposal, we aim to predict the seemingly unpredictable IMDb rating ofany movie before its theatrical release. Successfully predicting IMDb rating is beneficial for both producers (from afinancial standpoint) and consumers (from an entertainment standpoint) alike.
-
-## Description and Implementation Details
-Steps performed:
--> Preprocessing : Removed skewed columns,Discarded NaN and null values, Discarded post release attributes and non informative attributes.
-
-->Feature Selection: Using SkLearn K-Best Feature Selection, Correlation Matrix, Random Forest and Lasso Regression.
-
--> Hot Encoded Data and Normalized Data
+## Dataset
+Links to original dataset: [Movie Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset), [Poster Dataset](https://www.kaggle.com/neha1703/movie-genre-from-its-poster)  
+Link to preprocessed, train, val and test dataset: [Complete Dataset](https://drive.google.com/drive/folders/1m_SktiYKrOgIWUBiEIDZXnwItp7SZPPF?usp=sharing)
 
 ## Models
-Regression Models:
-Linear Regression ,Lasso Regression, Ridge Regression ,Elastic Net and Support Vector Regression.
+- Regression Models:
+  - Linear Regression
+  - Lasso Regression
+  - Ridge Regression
+  - ElasticNet
+  - Support Vector Regression
 
-Classification Models:
-Logistic Regression , Naive Bayes, Decision Trees, Random forest, K-nearest Neighbours,Support Vector Machines and Artificial Neural Network.
+- Classification Models:
+  - Logistic Regression
+  - Naive Bayes
+  - Decision Trees
+  - Random forest
+  - K-nearest Neighbours
+  - Support Vector Machines
+  - Artificial Neural Network
 
-## Analysis
-A number of models were trained for the task for both Re-gression  and  Classification.   For  regression  the  best  performing  model  was  Ridge.We  infer  that  most  of  thefeatures  selected  after  processing  data  are  important  asRidge outperforms other linear regressors.   For classification, SVM was the star performer.  Basic neural networkswere also tried but SVM outperformed them all. This mightbe because of SVM’s ability of extrapolating the featuresto  higher  dimensions  thus  making  the  classification  moreprominent.
+## Repository Description
+- ### Preprocessing
+  Code files for preprocessing data, EDA, feature selection, encoding, train-val-test split and feature scaling
+- ### Regression
+  Code files for training, validating, generating graphs and saving regression models
+- ### Classification
+  Code files for training, validating, generating graphs and saving classification models
+- ### Reports
+  Proposal, Interim Report and Final Report
+- ### Images
+  Images used in reports
 
-## Conclusion
-Our expectations from the project were to predict the IMDbrating of any movie using features that are available priorto its release and analyse the discriminatory power of fea-tures to analyse how different parameters impact the ratingfor any movie using various machine learning models.We  observed  that  features  like  length  of  a  movie,  the  di-rector, movie genres are amongst the most important onesto make any kind of prediction.  We also explored variousfeatures like the movie poster, the movie overview, the language of the movie and the country of production and foundout that even though they play an important part in the predictions, when taken individually they are not as strong asthe ones mentioned above.
+## How to run model ?
+Link to saved models: [Models](https://drive.google.com/drive/folders/1R6wdDw_7IYnxOpSKZIfgcL329PNPD5Tf?usp=sharing)
+
+- To load a model
+  - .sav model
+    ```python
+    filename = 'model_name.sav'
+    loaded_model = pickle.load(open(filename, 'rb'))
+    ```
+  - .h5 model
+    ```python
+    # for example: Sequential() model
+    
+    from keras.models import Sequential
+    from keras.layers import Dense, Dropout, Flatten, Input, Convolution2D, MaxPooling2D, Dropouts  
+    
+    filename = 'model_name.h5'
+    loaded_model = Sequential()
+    loaded_model.add(Dense(250, activation='relu', input_dim=3561))
+    loaded_model.add(Dropout(0.4))
+    loaded_model.add(Dense(500, activation='relu'))
+    loaded_model.add(Dropout(0.8))
+    loaded_model.add(Dense(500, activation='relu'))
+    loaded_model.add(Dropout(0.4))
+    loaded_model.add(Dense(200, activation='relu'))
+    loaded_model.add(Dropout(0.4))
+    loaded_model.add(Dense(80, activation='relu'))
+    loaded_model.add(Dense(21, activation='softmax'))
+    loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    loaded_model.load_weights(filename)
+    ```
+- To test a model
+  - .sav model
+    ```python
+    loaded_model.predict(test_X)
+    ```
+  - .h5 model
+    ```python
+    loaded_model.predict(test_X)
+    ```
+- To generate graphs
+  - Steps to plot graphs are documented in the .ipynb files for respective models
+
+## Contact
+For further queries feel free to reach out to following contributors.  
+Ananya Jain (ananya19408@iiitd.ac.in)  
+Manasvi Singh (manasvi19369@iiitd.ac.in)  
+Pritish Wadhwa (pritish19440@iiitd.ac.in)  
+Yash Bhargava (yash19289@iiitd.ac.in)
+
+## Final Report
+![Final Report](/Reports/Report_Group2.pdf)

@@ -88,3 +88,6 @@ Ananya Jain (ananya19408@iiitd.ac.in)
 Manasvi Singh (manasvi19369@iiitd.ac.in)  
 Pritish Wadhwa (pritish19440@iiitd.ac.in)  
 Yash Bhargava (yash19289@iiitd.ac.in)
+
+## Final Report
+![Final Report](/Reports/Report_Group2.pdf)

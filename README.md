@@ -91,4 +91,10 @@ Pritish Wadhwa (pritish19440@iiitd.ac.in)
 Yash Bhargava (yash19289@iiitd.ac.in)
 
 ## Final Report
-![Final Report](/Reports/Report_Group2.pdf)
+![Final Report 1](/Reports/Final_Report_Images/Report_Group2-1.png)  
+![Final Report 2](/Reports/Final_Report_Images/Report_Group2-2.png)  
+![Final Report 3](/Reports/Final_Report_Images/Report_Group2-3.png)  
+![Final Report 4](/Reports/Final_Report_Images/Report_Group2-4.png)  
+![Final Report 5](/Reports/Final_Report_Images/Report_Group2-5.png)  
+![Final Report 6](/Reports/Final_Report_Images/Report_Group2-6.png)  
+![Final Report 7](/Reports/Final_Report_Images/Report_Group2-7.png)

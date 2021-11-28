@@ -3,9 +3,8 @@
 by **Ananya Jain**, **Manasvi Singh**, **Pritish Wadhwa** and **Yash Bhargava**, Machine Learning (CSE343/ECE343) under the guidance of **Dr. Jainendra Shukla** from **Indraprastha Institute of Information Technology, Delhi**.
 
 ## Introduction
-<p align="justify">Is it possible to predict the rating of a movie prior to its release or production? Every year countless movies are made and released worldwide. All these movies are given ratings by viewers throughout the globe.These ratings are combined together to form the IMDb ratings. IMDb rating is the singlemost influential factor in deciding any consumer’s opinion and inherently the success of a movie.  
-
-With the machine learning techniques at our disposal, we aim to predict the seemingly unpredictable IMDb rating of any movie before its theatrical release. Successfully predicting IMDb rating is beneficial for both producers (from a financial standpoint) and consumers (from an entertainment standpoint) alike.</p>
+<p align="justify">Is it possible to predict the rating of a movie prior to its release or production? Every year countless movies are made and released worldwide. All these movies are given ratings by viewers throughout the globe.These ratings are combined together to form the IMDb ratings. IMDb rating is the singlemost influential factor in deciding any consumer’s opinion and inherently the success of a movie.</p>  
+<p align="justify">With the machine learning techniques at our disposal, we aim to predict the seemingly unpredictable IMDb rating of any movie before its theatrical release. Successfully predicting IMDb rating is beneficial for both producers (from a financial standpoint) and consumers (from an entertainment standpoint) alike.</p>
 
 ## Dataset
 Links to original dataset: [Movie Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset), [Poster Dataset](https://www.kaggle.com/neha1703/movie-genre-from-its-poster)  
@@ -91,4 +90,10 @@ Pritish Wadhwa (pritish19440@iiitd.ac.in)
 Yash Bhargava (yash19289@iiitd.ac.in)
 
 ## Final Report
-![Final Report](/Reports/Report_Group2.pdf)
+![Final Report 1](/Reports/Final_Report_Images/Report_Group2-1.png)  
+![Final Report 2](/Reports/Final_Report_Images/Report_Group2-2.png)  
+![Final Report 3](/Reports/Final_Report_Images/Report_Group2-3.png)  
+![Final Report 4](/Reports/Final_Report_Images/Report_Group2-4.png)  
+![Final Report 5](/Reports/Final_Report_Images/Report_Group2-5.png)  
+![Final Report 6](/Reports/Final_Report_Images/Report_Group2-6.png)  
+![Final Report 7](/Reports/Final_Report_Images/Report_Group2-7.png)

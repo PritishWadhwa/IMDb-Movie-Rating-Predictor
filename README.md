@@ -50,8 +50,6 @@ Link to saved models: [Models](https://drive.google.com/drive/folders/1R6wdDw_7I
     ```
   - .h5 model
     ```python
-    # for example: Sequential() model
-    
     from keras.models import Sequential
     from keras.layers import Dense, Dropout, Flatten, Input, Convolution2D, MaxPooling2D, Dropouts  
     

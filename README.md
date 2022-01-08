@@ -1,4 +1,4 @@
-# IMDb Movie Rating Predictor ML Project
+# IMDb Movie Rating Predictor 
 
 by **Ananya Jain**, **Manasvi Singh**, **Pritish Wadhwa** and **Yash Bhargava**, Machine Learning (CSE343/ECE343) under the guidance of **Dr. Jainendra Shukla** from **Indraprastha Institute of Information Technology, Delhi**.
 
